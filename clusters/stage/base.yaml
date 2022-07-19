@@ -7,6 +7,6 @@ spec:
   interval: 10m0s
   sourceRef:
     kind: GitRepository
-    name: base
+    name: flux-system
   path: ./base
   prune: true
