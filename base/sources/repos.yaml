@@ -1,0 +1,10 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: GitRepository
+metadata:
+  name: istio
+  namespace: flux-system
+spec:
+  interval: 5m
+  url: https://github.com/clvx/flux-poc
+  ref:
+    branch: master
