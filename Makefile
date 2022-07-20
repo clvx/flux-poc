@@ -43,4 +43,4 @@ bucket:
 		--endpoint=$(BUCKET_ENDPOINT) \
 		--access-key=$(shell cat .space-key) \
 		--secret-key=$(shell cat .space-secret) \
-		--interval=10m
+		--interval=10m; done
