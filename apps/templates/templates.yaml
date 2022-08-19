@@ -1,14 +1,26 @@
+---
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
 kind: Kustomization
 metadata:
-  name: apps
+  name: cb-server
   namespace: flux-system
 spec:
-  interval: 5m
-  path: "./"
-  prune: true
+  interval: 10m
+  targetNamespace: default
   sourceRef:
-    kind: Bucket
-    name: templates
-  validation: client
-  timeout: 2m
+    kind: OCIRepository
+    name: cb-server
+  path: ./
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+kind: Kustomization
+metadata:
+  name: cb-client
+  namespace: flux-system
+spec:
+  interval: 10m
+  targetNamespace: default
+  sourceRef:
+    kind: OCIRepository
+    name: cb-client
+  path: ./
