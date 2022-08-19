@@ -2,18 +2,7 @@
 apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: OCIRepository
 metadata:
-  name: cb-server
-  namespace: flux-system
-spec:
-  interval: 10m
-  url: oci://docker.io/clvx/cb-manifests
-  ref:
-    tag: latest
----
-apiVersion: source.toolkit.fluxcd.io/v1beta2
-kind: OCIRepository
-metadata:
-  name: cb-client
+  name: cb
   namespace: flux-system
 spec:
   interval: 10m

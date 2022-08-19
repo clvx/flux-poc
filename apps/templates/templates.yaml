@@ -9,7 +9,7 @@ spec:
   targetNamespace: default
   sourceRef:
     kind: OCIRepository
-    name: cb-server
+    name: cb
   path: ./deployment-server.yaml
   prune: true
   wait: true
@@ -25,7 +25,7 @@ spec:
   targetNamespace: default
   sourceRef:
     kind: OCIRepository
-    name: cb-client
+    name: cb
   path: ./deployment-client.yaml
   prune: true
   wait: true
