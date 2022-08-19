@@ -10,7 +10,7 @@ spec:
   sourceRef:
     kind: OCIRepository
     name: cb-server
-  path: ./
+  path: ./deployment-server.yaml
   prune: true
   wait: true
   timeout: 2m
@@ -26,7 +26,7 @@ spec:
   sourceRef:
     kind: OCIRepository
     name: cb-client
-  path: ./
+  path: ./deployment-client.yaml
   prune: true
   wait: true
   timeout: 2m
