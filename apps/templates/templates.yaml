@@ -10,7 +10,7 @@ spec:
   sourceRef:
     kind: OCIRepository
     name: cb
-  path: ./manifests/deployment-server.yaml
+  path: ./manifests/server/
   prune: true
   wait: true
   timeout: 2m
@@ -26,7 +26,7 @@ spec:
   sourceRef:
     kind: OCIRepository
     name: cb
-  path: ./manifests/deployment-client.yaml
+  path: ./manifests/client/
   prune: true
   wait: true
   timeout: 2m
