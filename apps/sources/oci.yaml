@@ -6,7 +6,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 10m
-  url: oci://docker.io/clvx/manifests/cb-server
+  url: oci://docker.io/clvx/cb-manifests
   ref:
     tag: latest
 ---
@@ -17,6 +17,6 @@ metadata:
   namespace: flux-system
 spec:
   interval: 10m
-  url: oci://docker.io/clvx/manifests/cb-client
+  url: oci://docker.io/clvx/cb-manifests
   ref:
     tag: latest
