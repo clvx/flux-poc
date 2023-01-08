@@ -1,6 +1,6 @@
 
 #ENV = dev stage
-ENV = dev
+ENV = devpod
 
 # ==============================================================================
 # For full Kind v0.12 release notes: https://github.com/kubernetes-sigs/kind/releases/tag/v0.12.0
@@ -29,3 +29,9 @@ bootstrap:
 		--branch=master \
 		--path=./clusters/$$i \
 		--personal; done
+
+alert:
+	kubectl -n flux-system create secret generic telegram-token \
+		--from-literal=token=$(shell cat .telegram-token) \
+		--from-literal=address=https://api.telegram.org
+
