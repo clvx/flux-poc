@@ -1,3 +1,5 @@
 .gh-token
 .telegram-token
 .direnv
+bin
+bin/gitops

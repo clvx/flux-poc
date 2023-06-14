@@ -27,6 +27,12 @@ a full bootstrap.
 
 - If cluster exists and tracked, it will skip.
 
+## Generate dashboard
+    
+In case the dashboard doesn't exist or it's outdated:
+
+    make gitops-install
+    make gitops-dashboard
 
 ## Teardown
 
