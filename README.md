@@ -34,6 +34,11 @@ In case the dashboard doesn't exist or it's outdated:
     make gitops-install
     make gitops-dashboard
 
+View dashboard:
+
+    kubectl port-forward svc/ww-gitops-weave-gitops -n flux-system 9001:9001
+
+
 ## Teardown
 
     make kind-down
