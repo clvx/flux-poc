@@ -18,8 +18,7 @@
     in
     {
       devShells.default = pkgs.mkShell {
-        packages = with pkgs; [kind fluxcd kubeswitch kubectl];
+        packages = with pkgs; [kind fluxcd kubeswitch kubectl istioctl];
       };
     });
 }
-
