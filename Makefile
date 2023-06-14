@@ -1,6 +1,6 @@
 
 #ENV = dev stage
-ENV = poc
+ENV = dev
 
 # ==============================================================================
 # For full Kind v0.12 release notes: https://github.com/kubernetes-sigs/kind/releases/tag/v0.12.0
